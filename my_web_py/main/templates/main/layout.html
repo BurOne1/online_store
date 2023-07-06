@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/protein.jpg' %}" alt="Picture">
+        <span class="Picture">One Mass</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li>Главная</li></a>
+            <a href="{% url 'about' %}"><li>Про нас</li></a>
+            <a href="{% url 'chat' %}"><li>Контакты</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

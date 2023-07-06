@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Спортивное питание</title>
+  <link rel="stylesheet" href="{% static 'main/css/test.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Добро пожаловать в наш магазин спортивного питания!</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="">Продукция</a></li>
+          <li><a href="">О нас</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Здоровое тело начинается со здорового питания</h2>
+      <a href="" class="btn">Купить сейчас</a>
+    </section>
+    <section class="featured-products">
+      <h3>Популярные товары</h3>
+      <div class="product">
+        <img src="{% static 'main/img/protein.jpg' %}" alt="Picture">
+        <h4>Товар 1</h4>
+        <p>Описание товара 1</p>
+      </div>
+      <div class="product">
+        <img src="{% static 'main/img/protein.jpg' %}" alt="Picture1">
+        <h4>Товар 2</h4>
+        <p>Описание товара 2</p>
+      </div>
+      <div class="product">
+        <img src="{% static 'main/img/protein.jpg' %}" alt="Picture2">
+        <h4>Товар 3</h4>
+        <p>Описание товара 3</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2023 Магазин спортивного питания</p>
+    </footer>
+  </div>
+</body>
+</html>
